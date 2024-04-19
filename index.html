@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyet Ha Phung</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/9a830dfd80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------------Introduction------------->
+    <section class="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="images/logo/nhp-logo.png" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div class="hero">
+          <div data-aos="zoom-in-left" data-aos-duration="1500" class="img-box">
+            <img class="back-img" src="images/hero/blob.png" alt="" />
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/hero/introImg.webp    1x,
+                  images/hero/introImg@2x.webp 2x
+                " />
+              <source
+                type="image/png"
+                srcset="
+                  images/hero/introImg.png    1x,
+                  images/hero/introImg@2x.png 2x
+                " />
+              <img class="main-img" src="images/hero/introImg.png" alt=""
+            /></picture>
+          </div>
+          <div data-aos="fade-down-right" data-aos-duration="1500" class="header-text">
+            <h1>Hi, I'm <span>Ha</span> Phung</h1>
+            <h4>Front-end Developer</h4>
+            <p>
+              This is my official portfolio website to showcase my all works
+              related to web development and UI/UX design
+            </p>
+            <a href="resume/nhp_resume.pdf" download class="btn btn__primary"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------About----------------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-down-right" data-aos-duration="1500" class="about-col-1">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/about/aboutImg.webp    1x,
+                  images/about/aboutImg@2x.webp 2x
+                " />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/about/aboutImg.jpg    1x,
+                  images/about/aboutImg@2x.jpg 2x
+                " />
+              <img src="images/about/aboutImg.jpg" alt=""
+            /></picture>
+          </div>
+          <div data-aos="fade-down-left" data-aos-duration="1500" class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              From the moment I created "Hello World" in the website's dashboard
+              with my first website, I knew I was drawn to the world of website
+              development. Specifically, Front-end Development provides an engaging
+              challenge to continuously learn and improve my skills in creating
+              high-quality website. What started with a simple "Hello world" has
+              turned into a true passion and has only gotten more interesting
+              over the years.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span>
+                  <div>Designing Web/App interface</div>
+                </li>
+                <li>
+                  <span>Web Development</span>
+                  <div>Web App Development</div>
+                </li>
+                <li>
+                  <span>App Development</span>
+                  <div>Building Android Apps</div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Front-end Development</span>
+                  <div class="experience-container">
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>HTML/CSS</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>Javascript</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>React</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <span>Back-end Development</span>
+                  <div class="experience-container">
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>Node JS</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>Express JS</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>Git</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </li>
+                <li>
+                  <span>Database</span>
+                  <div class="experience-container">
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>Mongo DB</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                    <article>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <div>
+                        <h5>PostgreSQL</h5>
+                        <p>Basic</p>
+                      </div>
+                    </article>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-Current</span>
+                  <div>
+                    Media Informatics student at University of Regensburg
+                  </div>
+                </li>
+                <li>
+                  <span>2020-2021</span>
+                  <div>Preparatory course at Studienkolleg Sachsen</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------Services---------------->
+    <section id="services">
+      <div data-aos="zoom-out-up" data-aos-duration="1500" class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Create responsive websites tailored to meet your business needs,
+              continuously improve knowledge with the latest technologies.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              Transform ideas into innovative mobile applications with
+              cutting-edge design and seamless experiences for Android.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Focus on usability, aesthetics UI and meaningful interactions with
+              captivating UI/UX designs that enhance user satisfaction.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------Portfolio---------------->
+    <section id="portfolio">
+      <div data-aos="zoom-out-up" data-aos-duration="1500" class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/work/social-media-app.webp    1x,
+                  images/work/social-media-app@2x.webp 2x
+                " />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/work/social-media-app.jpg    1x,
+                  images/work/social-media-app@2x.jpg 2x
+                " />
+              <img src="images/work/social-media-app.jpg"
+            /></picture>
+            <div class="layer">
+              <h3>Social Media WebApp</h3>
+              <p>
+                This full-stack web application incorporates authentication,
+                interaction features, friend management, and light/dark mode.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/nguyetha79/Social-Media-WebApp"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/work/workout-app.webp 1x" />
+              <source
+                type="image/jpg"
+                srcset="images/work/workout-app.jpg 1x" />
+              <img src="images/work/workout-app.jpg"
+            /></picture>
+            <div class="layer">
+              <h3>Workout Tracker WebApp</h3>
+              <p>
+                This is a robust CRUD web application to assist users in
+                tracking and managing their workout routines.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/nguyetha79/Workout-Tracker-WebApp"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/work/survey-app.webp    1x,
+                  images/work/survey-app@2x.webp 2x
+                " />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/work/survey-app.jpg    1x,
+                  images/work/survey-app@2x.jpg 2x
+                " />
+              <img src="images/work/survey-app.jpg"
+            /></picture>
+            <div class="layer">
+              <h3>Survey WebApp</h3>
+              <p>
+                This MERN stack project is designed to collect and gain valuable
+                insights into how users search for information online.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/nguyetha79/Forschungsseminar-IR-React"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="work-list">
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/work/emodrama-app.webp    1x,
+                  images/work/emodrama-app@2x.webp 2x
+                " />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/work/emodrama-app.jpg    1x,
+                  images/work/emodrama-app@2x.jpg 2x
+                " />
+              <img src="images/work/emodrama-app.jpg"
+            /></picture>
+            <div class="layer">
+              <h3>EmoDrama Analysis WebApp</h3>
+              <p>
+                The project aims to analyze characters' emotions, uses
+                Javascript, Bootstrap, data visualization libraries and follows
+                the MVC pattern
+              </p>
+              <a
+                href="https://github.com/nguyetha79/EmoDrama-Analysis-WebApp"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/work/eco-app.webp    1x,
+                  images/work/eco-app@2x.webp 2x
+                " />
+              <source
+                type="image/png"
+                srcset="
+                  images/work/eco-app.png    1x,
+                  images/work/eco-app@2x.png 2x
+                " />
+              <img src="images/work/eco-app.png"
+            /></picture>
+            <div class="layer">
+              <h3>Sustainability App</h3>
+              <p>
+                Designed and prototyped a mobile sustainability app “EcoMate” to
+                boost users to make eco-friendly choices
+              </p>
+              <a
+                target="_blank"
+                href="https://www.behance.net/gallery/196459731/EcoMate-An-app-for-living-sustainably"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/work/book-tracker-app.webp 1x" />
+              <source
+                type="image/png"
+                srcset="images/work/book-tracker-app.png 1x" />
+              <img src="images/work/book-tracker-app.jpg"
+            /></picture>
+            <div class="layer">
+              <h3>Book Tracker App</h3>
+              <p>
+                This android app helps students as well as readers in general to
+                keep track of reading plan and form reading habit.
+              </p>
+              <a
+                target="_blank"
+                href="https://github.com/nguyetha79/Book-Tracker-App"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <button id="seeMoreBtn" class="btn btn__secondary">See more</button>
+      </div>
+    </section>
+    <!---------------Contact----------------->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-down-right" data-aos-duration="1500" class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>nguyetha.phung00@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>0176 5683 8723</p>
+            <div class="social-icons">
+              <a href="https://github.com/nguyetha79" target="_blank"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://www.behance.net/nguyethaphung" target="_blank"
+                ><i class="fa-brands fa-square-behance"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nguyet-ha-phung-666a86262/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.xing.com/profile/NguyetHa_Phung062555/web_profiles"
+                target="_blank"
+                ><i class="fa-brands fa-square-xing"></i
+              ></a>
+            </div>
+            <a href="resume/nhp_resume.pdf" download class="btn btn__primary"
+              >Download CV</a
+            >
+          </div>
+          <div data-aos="fade-down-left" data-aos-duration="1500"  class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn__primary">Submit</button>
+            </form>
+            <div id="toastBox"></div>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
