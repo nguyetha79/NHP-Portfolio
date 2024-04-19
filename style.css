@@ -423,7 +423,10 @@ article p {
 .contact-left p {
   margin-top: 3rem;
 }
-
+.contact-left p a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 .contact-left p i {
   color: var(--primary-color);
   margin-right: 1.5rem;
