@@ -28,27 +28,27 @@ function closeMenu() {
 /** See more */
 let showAll = false;
 const seeMoreBtn = document.getElementById("seeMoreBtn");
-const workLists = document.querySelectorAll('.work-list');
+const workLists = document.querySelectorAll(".work-list");
 
 for (let i = 1; i < workLists.length; i++) {
-  workLists[i].style.display = 'none';
+  workLists[i].style.display = "none";
 }
 
-seeMoreBtn.addEventListener('click', function () {
+seeMoreBtn.addEventListener("click", function () {
   showAll = !showAll;
 
   if (showAll) {
     // If showAll is true, show all works
     for (let i = 1; i < workLists.length; i++) {
-      workLists[i].style.display = 'grid';
+      workLists[i].style.display = "grid";
     }
-    seeMoreBtn.textContent = 'Hide';
+    seeMoreBtn.textContent = "Hide";
   } else {
     // If showAll is false, hide extra works
     for (let i = 1; i < workLists.length; i++) {
-      workLists[i].style.display = 'none';
+      workLists[i].style.display = "none";
     }
-    seeMoreBtn.textContent = 'See More';
+    seeMoreBtn.textContent = "See More";
   }
 });
 
@@ -71,8 +71,6 @@ function showToast(message) {
   setTimeout(() => {
     toast.remove();
   }, 6000);
-
-  return true;
 }
 
 /** Form submit to google sheet */
@@ -81,6 +79,7 @@ const scriptURL =
 
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
+const submitBtn = document.getElementById("submitBtn");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -90,10 +89,13 @@ form.addEventListener("submit", (e) => {
       // setTimeout(function () {
       //   msg.innerHTML = "";
       // }, 5000);
-      if (showToast(successMsg)) {
+
+      try {
+        showToast(successMsg);
         form.reset();
+      } catch (error) {
+        console.log(error);
       }
-      console.log("Error");
     })
     .catch((error) => {
       showToast(errorMsg);
