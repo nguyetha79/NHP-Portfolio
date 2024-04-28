@@ -58,6 +58,17 @@ p {
   margin: 0;
 }
 
+/* Top Button*/
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3rem;
+  z-index: 99;
+  background-color: var(--primary-color);
+  margin: 2rem;
+}
+
 /* Introduction */
 .header {
   width: 100%;
